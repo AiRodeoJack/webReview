@@ -1,46 +1,136 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8" >
-    <title></title>
-  </head>
-  <body>
-    <ol>
+<head>
+  <meta charset="utf-8" >
+  <meta name="authors" content="Jacky Kim">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Basic</title>
 
-      <li><h4>Youtube Video</h4></li>
-      <p>
-        tag: iframe 이용한다<br>
-        attribute: src, width, height
-      </p>
+  <script>
+  </script>
 
-      <li><h4>Making table</h4></li>
-      <p>
-        tag: table, tr(table row), th(table header), td(table data)<br>
-        attribute: colspan, rowspan
-      </p>
+  <style>
+  </style>
 
-      <li><h4>iframe</h4></li>
-      <p>
-        - to display a web page within another web page.<br>
-        tag: iframe<br>
-        attribute: src, height, width, name by a href's target
-      </p>
+</head>
+<body>
 
-      <li><h4></h4></li>
-      <p>
+<nav>
+<h3>Bookmark navigation</h3>
+<a href="#c1">1. Youtube video</a><br>
+<a href="#c2">2. Making table</a><br>
+<a href="#c3">3. iframe</a><br>
+<a href="#c4">4. Symentic HTML5</a><br>
+<a href="#c5">5. HTML Block and Inline Elements</a><br>
+<a href="#c6">6. Bookmark</a><br>
+<nav>
+
+<hr>
+
+  <ol>
+
+    <li><h4 id="c1">Youtube Video</h4></li>
+    <p>
+      tag: iframe 이용한다<br>
+      attribute: src, width, height
+    </p>
+
+    <li><h4 id="c2">Making table</h4></li>
+    <p>
+      tag: table, tr(table row), th(table header), td(table data)<br>
+      attribute: colspan, rowspan
+    </p>
+
+    <li><h4 id="c3">iframe</h4></li>
+    <p>
+      - to display a web page within another web page.<br>
+      tag: iframe<br>
+      attribute: src, height, width, name by a href's target<br>
+      <iframe src="htmlBasic.html" width="80%" height="150" name="iframeA"></iframe>
+      <p><a href="cssBasic.html" target="iframeA">Change iframe using name/target</a></p>
+    </p>
+
+    <li><h4 id="c4">Symentic html5</h4></li>
+    <p>
+      <a href="https://webflow.com/blog/html5-semantic-elements-and-webflow-the-essential-guide">guide 1 </a><br>
+      <a href="https://www.semrush.com/blog/semantic-html5-guide/">guide 2</a><br>
+      <img src="image/symenticHtml.png"</p>
+
+      <article>
+        <li><h4 id="c5">HTML Block and Inline Elements</h4></li>
+        <div>
+          - Block-level Elements<br>
+          The &ltdiv&gt elements is often used as a container for <span style="color:red">other HTML elements</span>.<br>
+          tag: div<br><br>
+
+
+          - Inline Elements<br>
+          The &ltspan&gt elements is often used as a container for <span style="color:red">some text</span>.<br>
+          tag: span<br><br>
+        </div>
+      </article>
+
+      <article>
+      <li><h4 id="c6">Bookmark</h4></li>
+      <div>
+        1. Crate a bookmark with the id attribute<br>
+        2-A. Then, add a link to the bookmark, from with the same page.
+        2-B. Or, add a link to the bookmark from another page.
+        tag: id , href<br>
+        attribute: id value;
+      </div>
+      </article>
+
+
+      <article>
+      <li><h4>The HTML &ltmeta&gt Element</h4></li>
+      1.
+      for a description of yor web page <br>
+      for keywords for search engines <br>
+      for the character set used  <br>
+      for the author of a page <br>
+        tag: meta <br>
+        attribute: charset="" / name="" content="" <br>
         <br>
-        tag: <br>
-        attribute:
-      </p>
 
+        2. setting the viewport for a responsible web<br>
+        The viewport is the user's visible area of a web page. It varies with the device, and will be smaller on a mobile phone than on a computer screen.
+        tag: meta<br>
+        attribute: name="viewport" content="width=device-width, initial-scale=1.0<br>
+
+        </article>
+
+        <article>
+        <li><h4>HTML layouts</h4></li>
+        <p>
+          There are five different ways to create multicolumn layouts. Each way has its pros and cons:<br>
+          Practical: CSS Grids > Flexbox > Floats<br>
+          Browser Support: Floats > Flexbox > CSS Grids<br>
+          <ul>
+            <li> HTML tables (not recommended) </li>
+            <li> CSS float property: It is common to do entire web layouts using the CSS float property.</li>
+            <li> CSS flexbox: Flexbox is a new layout mode in CSS3.</li>
+            <li> CSS framework: like Bootstrap</li>
+            <li> CSS grid(recommended): making it easier to design web pages without having to use floats and positioning</li>
+          </ul>
+
+        </p>
+        </article>
+
+
+      <article>
       <li><h4>google anaytic</h4></li>
       <p>
         <br>
         tag: <br>
         attribute:
       </p>
+      </article>
+
+
+
 
     </ol>
 
   </body>
-</html>
+  </html>

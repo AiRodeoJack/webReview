@@ -1,80 +1,257 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>CSSBasic</title>
-  </head>
+<head>
+  <meta charset="utf-8">
+  <title>CSSBasic</title>
 
-  <body>
+  <style>
+  .redColor{
+    color: red;
+  }
+
+  * {
+
+  }
+  </style>
+
+</head>
+
+<body>
+
+ <nav>
+  <h3>Navigation</h3>
+<a href="#c1"> 1. Style tag</a><br>
+<a href="#c2"> 2. CSS의 목적</a><br>
+<a href="#c3"> 3. Syntax of CSS</a><br>
+<a href="#c4"> 4. Common CSS properties </a><br>
+<a href="#c5"> 5. Idiomatic CSS</a><br>
+<a href="#c6"> 6. 4 types of CSS selectors</a><br>
+<a href="#c7"> </a><br>
+<a href="#c8"> </a><br>
+ </nav>
+
+ <hr>
 
 
-    <ol>
-      <li><h4>&lt;style&gt;</h4></li>
-      <p>
-        to define a tag for using CSS on .html or .css<br>
-      </p>
+  <ol>
+    <li><h4 id="c1">&lt;style&gt;</h4></li>
+    <p>
+      to define a tag for using CSS on .html or .css<br>
+    </p>
 
 
-      <li><h4>CSS의 목적 </h4></li>
-      <p>
-        html에서 작성되면 중복되어야 할 디자인적 tag들을 단 한번으로 표현할 수 있다.<br>
-        한개의 css로 여러개의 html파일을 다룬다.
+    <li><h4 id="c2">CSS의 목적 </h4></li>
+    <p>
+      html에서 중복적으로 표현해야 하는 디자인을 단 한번의 css attribute로 표현할 수 있다.<br>
+      한개의 css로 여러개의 html파일을 다룬다.
 
-      </p>
+    </p>
 
-      <li><h4>Syntax</h4></li>
-      <p>
-        selector {<br>
+    <li><h4 id="c3">Syntax</h4></li>
+    <p>
+      selector {<br>
         property:value; ----- declaration <br>
       }
       <ul>
-       <li>selector - a person / thing that selects something</li>
-       <li>declaration - a formal / explicit announcement or statement</li>
-     </ul>
-     </p>
+        <li>selector - a person / thing that selects something</li>
+        <li>declaration - a formal / explicit announcement or statement</li>
+      </ul>
+    </p>
 
-      <li><h4>common CSS properties reference</h4></li>
+    <li><h4 id="c4">Common CSS properties reference</h4></li>
+    <p>
+      A basic list of the most common CSS properties<br>
+      <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Properties_Reference">MDN</a>
+    </p>
+
+    <li><h4 id="c5">Idiomatic CSS</h4></li>
+    <p>
+      The most popular way to order CSS properties is grouped by type.<br>
+      <ul> <h4>5 parts of CSS properties</h4>
+        <li>Positioning</li>
+        <li>Display & Box Model</li>
+        <li>Color</li>
+        <li>Text</li>
+        <li>Other</li>
+      </ul>
+      <a href="https://css-tricks.com/poll-results-how-do-you-order-your-css-properties/">Check an order by CSS Tricks</a><br>
+      <a href=""></a>
+    </p>
+
+
+<!--Selector-->
+    <li><h4 id="c6">4 types of CSS selectors</h4></li>
+    <p>
+      <ul>
+        <li><h4>The element selector</h4></li>
+        It selects element name.
+
+        <li><h4>The class selector</h4></li>
+        On html, use the class attribute: &lttag <b class="redColor">class</b>="className"&gt<br>
+        in &ltstyle&gt, .className{ }<br>
+        class ="className1 className2"<br>
+        The class selector selects elements with a <u>specific</u> class attribute.
+        The last class selector has a priority of the same class selectors.<br>
+
+        <li><h4>The id selector</h4></li>
+        On html, use the id attribute: &lttag <b class="redColor">id</b>="idName"&gt<br>
+        in &ltstyle&gt, #idName{ }<br>
+        id selector has the first priority of all the selectors. <br>
+        The id value have to be <u>unique</u> within a page. <br>
+        ex) id card, identify: indicate who/what is
+
+        <li><h4>complexed selectors</h4></li>
+        These selector can be mixed on a tag.<br>
+        ex) &lttag class="classname" id="idname"&gt
+
+        <li><h4>Grouping selectors</h4></li>
+        To group selectors for minimizing the code, seperate each selector with a comma. <br>
+        ex) h1, h2, p { }
+      </ul>
+
+      <li><h4>CSS Comments</h4></li>
       <p>
-        a basic list of the most common CSS properties<br>
-        <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Properties_Reference">MDN</a>
+        A comment starts with /* and ends with */.
+
       </p>
+    </p>
 
-      <li><h4>Idiomatic CSS</h4></li>
-      <p>
-        The most popular way to order CSS properties is grouped by type.<br>
-        <ul> <h5>5 parts of CSS properties</h5>
-          <li>positioning</li>
-          <li>Display & Box Model</li>
-          <li>Color</li>
-          <li>Text</li>
-          <li>other</li>
+
+
+<!-- Positioning -->
+    <li><h4>Positioning</h4></li>
+    <p>
+      property: <br>
+      value:
+    </p>
+
+
+<!--Display and Box Model-->
+    <li><h4>Display & Box Model</h4></li>
+    <p>
+      property: <br>
+      value:
+    </p>
+
+
+<!-- Color -->
+    <li><h4>Color</h4></li>
+    <p>
+      <ul>
+      <li>Color Names</li>
+      <table>
+        <tr>
+          <td>  <h4 style="background-color:Tomato;">Tomato</h4> </td>
+          <td>  <h4 style="background-color:Orange;">Orange</h4></td>
+          <td>  <h4 style="background-color:DodgerBlue;">DodgerBlue</h4></td>
+          <td>  <h4 style="background-color:MediumSeaGreen;">MediumSeaGreen</h4></td>
+        </tr>
+        <tr>
+          <td>  <h4 style="background-color:Gray;">Gray</h4></td>
+          <td>  <h4 style="background-color:SlateBlue;">SlateBlue</h4></td>
+          <td>  <h4 style="background-color:Violet;">Violet</h4></td>
+          <td>  <h4 style="background-color:LightGray;">LightGray</h4></td>
+        </tr></table>
+
+
+        <li style="background-color:DodgerBlue;">property: background-color</li>
+        value: color names<br><br>
+
+        <li style="color:MediumSeaGreen;">property: color (for text)</li>
+        value: color names<br><br>
+
+        <li style="border:2px solid Tomato;">property: border(for border color)</li>
+        value: 2px solid colorNames<br><br>
+
+        <h4>Color value</h4>
+        <ul>
+          <li>RGB Value </li>
+          <p style="background-color:rgb(255, 165, 0);">rgb(red, green, blue)</p>
+
+          <li>HEX value </li>
+            <p style="background-color:#ffa500;">#rrggbb </P>
+
+          <li>HSL Value </li>
+            <p style="background-color:hsl(248, 53%, 58%);">hsl(hue, saturation, lightness) </p>
+            <p>- Hue is a degree on the color wheel from 0 to 360. 0 is red, 120 is green, and 240 is blue.<br>
+              - Saturation is a percentage value, 0% means a shade of gray, and 100% is the full color.<br>
+              - Lightness is also a percentage, 0% is black, 50% is neither light or dark, 100% is white</P>
+
+          <li>RGBA Value </li>
+            <p style="background-color:rgba(255, 99, 71, 0.6)">rgba(red, green, blue, alpha) </P>
+
+          <li>HSLA Value </li>
+            <p style="background-color:hsla(9,100%,64%,0.8);">hsla(hue, saturation, lightness, alpha) </P>
+
         </ul>
-        <a href="https://css-tricks.com/poll-results-how-do-you-order-your-css-properties/">Check an order by CSS Tricks</a><br>
-        <a href=""></a>
+
+      </p>
+    </ul>
+
+
+<!-- Text -->
+      <li><h4>Text & Font</h4></li>
+      <p>
+        <h4>A. text</h4>
+        <ul>
+          <li>property: color </li>
+          value: color name - blue; green;<br>
+          value: HEX value - #ff0000;<br>
+          value: RGB value - rgb(255,0,0);<br><br>
+
+          <li>property: text-decoration</li>
+          value: none; overline; underline; line-through;<br><br>
+
+          <li>property: text-align</li>
+          value: center; left; right; justify;<br><br>
+
+          <li>property: text-transformation</li>
+          value: none; capitalize ; uppercase; lowercase;<br><br>
+
+          <li>property: line-height</li>
+          value: %; px;<br><br>
+
+          <li>property: letter-spacing</li>
+          value: normal; px;<br><br>
+        </ul>
+
+        <h4>B. font</h4>
+        <ul>
+          <li> two types of font family name</li>
+          generic family - base fonts(serif, sans-serif,monospace)<br>
+          font family - a specific font family<br><br>
+
+
+          <li>property: font-family</li>
+          fallback system: If the browser does not support the first font , it tries the next font.<br>
+          Start with the font you want, and end with a generic family<br>
+          value: "Times New Roman", Times, serif;<br><br>
+
+          <li>property: font-style</li>
+          value: normal; italic; oblique;<br><br>
+
+          <li>property: font-size</li>
+          - absolute size<br>
+          - Relative size<br>
+          * default font size: 16px = 1em;<br>
+          value: px; em;(The em size unit is recommended by the W3C.)<br><br>
+
+          -Responsive Font Size<br>
+          value: vw;(viewpoint width)<br>
+          Viewport is the browser window size. 1vw = 1% of viewport width. If the viewport is 50cm wide, 1vw is 0.5cm.<br><br>
+
+          <li>property: font-weight</li>
+          value: normal; bold;<br>
+          Viewport is the browser window size. 1vw = 1% of viewport width. If the viewport is 50cm wide, 1vw is 0.5cm.<br><br>
+
+        </ul>
       </p>
 
-      <li><h4>text</h4></li>
+
+<!-- Other -->
+      <li><h4>Other</h4></li>
       <p>
-        <br>
-        property: text-decoration<br>
-        value:
-        property: text-align<br>
-        value:
         property: <br>
-        value:
-      </p>
-
-      <li><h4>font</h4></li>
-      <p>
-        <br>
-        property: font-size<br>
-        value:
-      </p>
-
-      <li><h4>color</h4></li>
-      <p>
-        <br>
-        property: color<br>
         value:
       </p>
 
@@ -84,7 +261,7 @@
         property: <br>
         value:
       </p>
-  </ol>
+    </ol>
 
   </body>
-</html>
+  </html>
